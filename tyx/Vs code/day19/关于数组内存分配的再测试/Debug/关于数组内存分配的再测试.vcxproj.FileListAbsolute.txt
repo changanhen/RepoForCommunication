@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day19\关于数组内存分配的再测试\Debug\关于数组内存分配的再测试.exe
+E:\cpp\Saves\Vs code\day19\关于数组内存分配的再测试\Debug\关于数组内存分配的再测试.pdb

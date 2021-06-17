@@ -1,0 +1,16 @@
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\bin\Debug\net5.0\H9Q2.exe
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\bin\Debug\net5.0\H9Q2.deps.json
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\bin\Debug\net5.0\H9Q2.runtimeconfig.json
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\bin\Debug\net5.0\H9Q2.runtimeconfig.dev.json
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\bin\Debug\net5.0\H9Q2.dll
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\bin\Debug\net5.0\ref\H9Q2.dll
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\bin\Debug\net5.0\H9Q2.pdb
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.csproj.AssemblyReference.cache
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.GeneratedMSBuildEditorConfig.editorconfig
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.csproj.CoreCompileInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.dll
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\ref\H9Q2.dll
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.pdb
+E:\cpp\Saves\C_Sharp_Repository\day12\Homework9\H9Q2\obj\Debug\net5.0\H9Q2.genruntimeconfig.cache

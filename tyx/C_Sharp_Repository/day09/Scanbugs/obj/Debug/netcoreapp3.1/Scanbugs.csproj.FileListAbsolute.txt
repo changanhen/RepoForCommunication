@@ -1,0 +1,13 @@
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\bin\Debug\netcoreapp3.1\Scanbugs.exe
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\bin\Debug\netcoreapp3.1\Scanbugs.deps.json
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\bin\Debug\netcoreapp3.1\Scanbugs.runtimeconfig.json
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\bin\Debug\netcoreapp3.1\Scanbugs.runtimeconfig.dev.json
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\bin\Debug\netcoreapp3.1\Scanbugs.dll
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\bin\Debug\netcoreapp3.1\Scanbugs.pdb
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\obj\Debug\netcoreapp3.1\Scanbugs.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\obj\Debug\netcoreapp3.1\Scanbugs.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\obj\Debug\netcoreapp3.1\Scanbugs.csproj.CoreCompileInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\obj\Debug\netcoreapp3.1\Scanbugs.dll
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\obj\Debug\netcoreapp3.1\Scanbugs.pdb
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\obj\Debug\netcoreapp3.1\Scanbugs.genruntimeconfig.cache
+E:\cpp\Saves\C_Sharp_Repository\day09\Scanbugs\obj\Debug\netcoreapp3.1\Scanbugs.csproj.AssemblyReference.cache

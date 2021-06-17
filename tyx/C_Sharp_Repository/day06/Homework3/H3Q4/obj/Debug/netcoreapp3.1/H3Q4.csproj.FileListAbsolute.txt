@@ -1,0 +1,13 @@
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\bin\Debug\netcoreapp3.1\H3Q4.exe
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\bin\Debug\netcoreapp3.1\H3Q4.deps.json
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\bin\Debug\netcoreapp3.1\H3Q4.runtimeconfig.json
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\bin\Debug\netcoreapp3.1\H3Q4.runtimeconfig.dev.json
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\bin\Debug\netcoreapp3.1\H3Q4.dll
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\bin\Debug\netcoreapp3.1\H3Q4.pdb
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\obj\Debug\netcoreapp3.1\H3Q4.csprojAssemblyReference.cache
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\obj\Debug\netcoreapp3.1\H3Q4.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\obj\Debug\netcoreapp3.1\H3Q4.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\obj\Debug\netcoreapp3.1\H3Q4.csproj.CoreCompileInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\obj\Debug\netcoreapp3.1\H3Q4.dll
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\obj\Debug\netcoreapp3.1\H3Q4.pdb
+E:\cpp\Saves\C_Sharp_Repository\day06\Homework3\H3Q4\obj\Debug\netcoreapp3.1\H3Q4.genruntimeconfig.cache

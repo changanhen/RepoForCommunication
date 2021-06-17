@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day23\默写建立动态链表\Debug\默写建立动态链表.exe
+E:\cpp\Saves\Vs code\day23\默写建立动态链表\Debug\默写建立动态链表.pdb

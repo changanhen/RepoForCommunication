@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day31\test2\Debug\test2.exe
+E:\cpp\Saves\Vs code\day31\test2\Debug\test2.pdb

@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day45\BitCalculateTest\Debug\BitCalculateTest.exe
+E:\cpp\Saves\Vs code\day45\BitCalculateTest\Debug\BitCalculateTest.pdb

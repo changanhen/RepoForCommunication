@@ -1,0 +1,5 @@
+E:\cpp\Saves\C_Sharp_Repository\day02\obj\Debug\net5.0\day02.csprojAssemblyReference.cache
+E:\cpp\Saves\C_Sharp_Repository\day02\obj\Debug\net5.0\day02.GeneratedMSBuildEditorConfig.editorconfig
+E:\cpp\Saves\C_Sharp_Repository\day02\obj\Debug\net5.0\day02.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day02\obj\Debug\net5.0\day02.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day02\obj\Debug\net5.0\day02.csproj.CoreCompileInputs.cache

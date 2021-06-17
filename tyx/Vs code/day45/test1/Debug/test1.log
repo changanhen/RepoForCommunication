@@ -1,0 +1,3 @@
+﻿  源.cpp
+E:\cpp\Saves\Vs code\day45\test1\源.cpp(12,33): warning C4244: “参数”: 从“double”转换到“size_t”，可能丢失数据
+  test1.vcxproj -> E:\cpp\Saves\Vs code\day45\test1\Debug\test1.exe

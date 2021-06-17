@@ -1,0 +1,12 @@
+clc;
+xdata = [1 2 3 4 5 6 7 8 9 10 11 12];
+ydata = [3 8 14 21 26 32 33 35 30 20 11 5];
+plot (xdata, ydata, 'm.');
+axis([0 14 0 40]);
+fun = @(x, xdata)x(1)*sin(x(2)*xdata) + x(3);
+x0 = [23, 0.2, -0.2];
+x = lsqcurvefit(fun,x0, xdata, ydata);
+times = linspace(xdata(1),xdata(end));
+plot(xdata, ydata, 'b*', times, fun(x, times), 'r-', 'linewidth', 3);
+legend('Data', 'Fitted Curve');
+title('Data and Fitted Curve');

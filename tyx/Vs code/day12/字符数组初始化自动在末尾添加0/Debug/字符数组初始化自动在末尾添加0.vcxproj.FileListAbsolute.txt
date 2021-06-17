@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day12\字符数组初始化自动在末尾添加0\Debug\字符数组初始化自动在末尾添加斜杠0.exe
+E:\cpp\Saves\Vs code\day12\字符数组初始化自动在末尾添加0\Debug\字符数组初始化自动在末尾添加斜杠0.pdb

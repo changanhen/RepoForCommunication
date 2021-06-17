@@ -1,0 +1,4 @@
+﻿  源.cpp
+E:\cpp\Saves\Vs code\day29\100.7.vs\源.cpp(4,14): warning C4309: “初始化”: 截断常量值
+E:\cpp\Saves\Vs code\day29\100.7.vs\源.cpp(4,23): warning C4309: “初始化”: 截断常量值
+  100.7.vs.vcxproj -> E:\cpp\Saves\Vs code\day29\100.7.vs\Debug\100.7.vs.exe

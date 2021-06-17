@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day16\hanoi1\Debug\hanoi1.exe
+E:\cpp\Saves\Vs code\day16\hanoi1\Debug\hanoi1.pdb

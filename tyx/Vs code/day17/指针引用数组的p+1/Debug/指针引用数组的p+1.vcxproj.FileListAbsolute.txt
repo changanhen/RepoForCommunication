@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day17\指针引用数组的p+1\Debug\指针引用数组的p+1.exe
+E:\cpp\Saves\Vs code\day17\指针引用数组的p+1\Debug\指针引用数组的p+1.pdb

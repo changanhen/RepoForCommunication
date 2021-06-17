@@ -1,0 +1,16 @@
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.csprojAssemblyReference.cache
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.GeneratedMSBuildEditorConfig.editorconfig
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.csproj.CoreCompileInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\bin\Debug\net5.0\week2_homework.exe
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\bin\Debug\net5.0\week2_homework.deps.json
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\bin\Debug\net5.0\week2_homework.runtimeconfig.json
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\bin\Debug\net5.0\week2_homework.runtimeconfig.dev.json
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\bin\Debug\net5.0\week2_homework.dll
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\bin\Debug\net5.0\ref\week2_homework.dll
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\bin\Debug\net5.0\week2_homework.pdb
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.dll
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\ref\week2_homework.dll
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.pdb
+E:\cpp\Saves\C_Sharp_Repository\day04\week2_homework\obj\Debug\net5.0\week2_homework.genruntimeconfig.cache

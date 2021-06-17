@@ -1,0 +1,16 @@
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\bin\Debug\net5.0\test3.exe
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\bin\Debug\net5.0\test3.deps.json
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\bin\Debug\net5.0\test3.runtimeconfig.json
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\bin\Debug\net5.0\test3.runtimeconfig.dev.json
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\bin\Debug\net5.0\test3.dll
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\bin\Debug\net5.0\ref\test3.dll
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\bin\Debug\net5.0\test3.pdb
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.csprojAssemblyReference.cache
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.GeneratedMSBuildEditorConfig.editorconfig
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.csproj.CoreCompileInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.dll
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\ref\test3.dll
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.pdb
+E:\cpp\Saves\C_Sharp_Repository\day02\test3\obj\Debug\net5.0\test3.genruntimeconfig.cache

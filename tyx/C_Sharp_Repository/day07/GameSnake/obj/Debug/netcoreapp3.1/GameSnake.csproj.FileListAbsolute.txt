@@ -1,0 +1,4 @@
+E:\cpp\Saves\C_Sharp_Repository\day07\GameSnake\obj\Debug\netcoreapp3.1\GameSnake.csprojAssemblyReference.cache
+E:\cpp\Saves\C_Sharp_Repository\day07\GameSnake\obj\Debug\netcoreapp3.1\GameSnake.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day07\GameSnake\obj\Debug\netcoreapp3.1\GameSnake.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day07\GameSnake\obj\Debug\netcoreapp3.1\GameSnake.csproj.CoreCompileInputs.cache

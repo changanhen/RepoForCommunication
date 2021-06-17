@@ -1,0 +1,16 @@
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\bin\Debug\net5.0\H7Q1.exe
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\bin\Debug\net5.0\H7Q1.deps.json
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\bin\Debug\net5.0\H7Q1.runtimeconfig.json
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\bin\Debug\net5.0\H7Q1.runtimeconfig.dev.json
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\bin\Debug\net5.0\H7Q1.dll
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\bin\Debug\net5.0\ref\H7Q1.dll
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\bin\Debug\net5.0\H7Q1.pdb
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.csproj.AssemblyReference.cache
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.GeneratedMSBuildEditorConfig.editorconfig
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.AssemblyInfoInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.AssemblyInfo.cs
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.csproj.CoreCompileInputs.cache
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.dll
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\ref\H7Q1.dll
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.pdb
+E:\cpp\Saves\C_Sharp_Repository\day10\Homework7\H7Q1\obj\Debug\net5.0\H7Q1.genruntimeconfig.cache

@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day45\Stack and Heap Test\Debug\Stack and Heap Test.exe
+E:\cpp\Saves\Vs code\day45\Stack and Heap Test\Debug\Stack and Heap Test.pdb

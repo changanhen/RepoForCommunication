@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day04\主函数地位\Debug\主函数地位.exe
+E:\cpp\Saves\Vs code\day04\主函数地位\Debug\主函数地位.pdb

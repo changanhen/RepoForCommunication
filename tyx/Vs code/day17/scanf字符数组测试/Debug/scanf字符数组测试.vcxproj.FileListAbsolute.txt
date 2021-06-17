@@ -1,0 +1,2 @@
+E:\cpp\Saves\Vs code\day17\scanf字符数组测试\Debug\scanf字符数组测试.exe
+E:\cpp\Saves\Vs code\day17\scanf字符数组测试\Debug\scanf字符数组测试.pdb

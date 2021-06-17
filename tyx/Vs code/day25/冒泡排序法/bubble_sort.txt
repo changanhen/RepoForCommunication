@@ -1,0 +1,32 @@
+int bubble_sort1(int data[], int n)
+{
+	int i, j, tmp;
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < n - i; j++)
+		{
+			if (data[j - 1] > data[j])
+			{
+				tmp = data[j - 1];
+				data[j - 1] = data[j];
+				data[j] = tmp;
+			}
+		}
+	}
+	return 0;
+}
+#include <stdio.h>
+int main()
+{
+	int i;
+	int bubble_sort1(int data[], int n);
+	int data[8];
+	printf("请输入8个数：");
+	scanf_s("%d %d %d %d %d %d %d %d", data, data + 1, data + 2, data + 3, data + 4, data + 5, data + 6, data + 7);
+	bubble_sort1(data, 8);
+	for (i = 0; i < 8; i++)
+	{
+		printf("%d ", data[i]);
+	}
+	return 0;
+}

@@ -1,0 +1,4 @@
+﻿  源.cpp
+E:\cpp\Saves\Vs code\day27\随机数发生器\源.cpp(23,9): warning C4778: “printf”: 格式字符串“%”未终止
+E:\cpp\Saves\Vs code\day27\随机数发生器\源.cpp(24,9): warning C4778: “printf”: 格式字符串“%”未终止
+  随机数发生器.vcxproj -> E:\cpp\Saves\Vs code\day27\随机数发生器\Debug\随机数发生器.exe
