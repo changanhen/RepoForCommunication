@@ -70,3 +70,78 @@ int main()
  *@param length 线性表的最大容量
  *@return 成功返回直线该表的指针，否则返回NULL
 */
+
+/**
+ *@brief 销毁线性表
+ *@param pList 指向需要销毁的线性表的指针
+*/
+
+/**
+*@brief 置空线性表
+*@param pList 指向需要置空线性表的指针
+*/
+
+/**
+*@brief 检测线性表是否为空
+*@param pList 指向线性表的指针
+*@return 如果线性表为空，返回1；否则返回0
+*/
+
+/**
+*@brief 获取线性表长度
+*@param pList 指向线性表的指针
+*@return 线性表的长度
+*/
+
+/**
+ *@brief 获取线性表中第n个元素
+ *@param pList 指向线性表的指针
+ *@param n 要获取元素在线性表中的位置
+ *@param data 获取成功，取得元素存放与data中
+ *@return 获取成功返回1, 失败则返回0
+ */
+
+/**
+ *@brief 从pos起查找data第一次出现的位置
+ *@param pList 指向线性表的指针
+ *@param pos 查找的起始位置
+ *@param data 要查找的元素
+  *@return 找到则返回该位置, 未找到，返回-1
+  */
+
+/**
+*@brief 获取第n个元素的前驱
+*@param pList 指向线性表的指针
+*@param n n的前驱
+*@param data 获取成功，取得元素存放与data中
+*@return 找到则返回前驱的位置（n-1）, 未找到，返回-1
+*/
+
+/**
+*@brief 获取第n个元素的后继
+*@param pList 指向线性表的指针
+*@param n n的后继
+*@param data 获取成功，取得元素存放与data中
+*@return 找到则返回后继的位置（n+1）, 未找到，返回-1
+*/
+
+/**
+*@brief 将 data插入到线性表的 pos位置处
+*@param pList 指向线性表的指针
+*@param pos 插入的位置
+*@param data 要插入的元素存放data中
+*@return 成功，返回新的表长（原表长+1）, 失败，返回-1
+*/
+
+/**
+*@brief 将pos位置处的元素删除
+*@param pList 指向线性表的指针
+*@param pos 删除元素的位置
+*@return 成功，返回新的表长（原表长-1）, 失败，返回-1
+*/
+
+/**
+*@brief 输出线性表
+*@param pList 指向线性表的指针
+*/
+
