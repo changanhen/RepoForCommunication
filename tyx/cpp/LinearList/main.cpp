@@ -61,7 +61,7 @@ int main()
 		printf("第3个元素的前驱是%d\n", data);
 
 	DataType x;
-	int success = GetListElement(sqlist, 2, &x);
+	int success = GetListElement(sqList, 2, &x);
 	return 0;
 }
 //线性表方法实现
@@ -114,11 +114,24 @@ void ClearList(ListType* plist)
 *@return 如果线性表为空，返回1；否则返回0
 */
 
+int IsEmptyList(ListType* plist)
+{
+	if (plist->length >= 1)
+		return 0;
+	else
+		return 1;
+}
+
 /**
 *@brief 获取线性表长度
 *@param pList 指向线性表的指针
 *@return 线性表的长度
 */
+
+int GetListLength(ListType* plist)
+{
+	return plist->length;
+}
 
 /**
  *@brief 获取线性表中第n个元素
@@ -128,6 +141,17 @@ void ClearList(ListType* plist)
  *@return 获取成功返回1, 失败则返回0
  */
 
+int GetListElement(ListType* plist, int n, DataType* data)
+{
+	if (n >= 0 || n < plist->length)
+	{
+		*data = plist->list[n];
+		return 1;
+	}
+	else 
+		return 0;
+}
+
 /**
  *@brief 从pos起查找data第一次出现的位置
  *@param pList 指向线性表的指针
@@ -135,6 +159,18 @@ void ClearList(ListType* plist)
  *@param data 要查找的元素
   *@return 找到则返回该位置, 未找到，返回-1
   */
+
+int FindElement(ListType* plist, int pos, DataType data)
+{
+	for (; pos < plist->length; pos++)
+	{
+		if (plist->list[pos] == data)
+		{
+			return pos;
+		}
+	}
+	return -1;
+}
 
 /**
 *@brief 获取第n个元素的前驱
@@ -144,6 +180,16 @@ void ClearList(ListType* plist)
 *@return 找到则返回前驱的位置（n-1）, 未找到，返回-1
 */
 
+int GetPriorElement(ListType* pList, int n, DataType* data)
+{
+	if (n >= 1 || n < pList->length)
+	{
+		*data = pList->list[n - 1];
+		return n - 1;
+	}
+	return -1;
+}
+
 /**
 *@brief 获取第n个元素的后继
 *@param pList 指向线性表的指针
@@ -151,6 +197,16 @@ void ClearList(ListType* plist)
 *@param data 获取成功，取得元素存放与data中
 *@return 找到则返回后继的位置（n+1）, 未找到，返回-1
 */
+
+int GetNextElement(ListType* pList, int n, DataType* data)
+{
+	if (n >= 0 || n < pList->length - 1)
+	{
+		*data = pList->list[n + 1];
+		return n + 1;
+	}
+	return -1;
+}
 
 /**
 *@brief 将 data插入到线性表的 pos位置处
@@ -160,6 +216,22 @@ void ClearList(ListType* plist)
 *@return 成功，返回新的表长（原表长+1）, 失败，返回-1
 */
 
+int InsertToList(ListType* pList, int pos, DataType data)
+{
+	if (pList->length + 1 <= pList->maxLength || pos >= 0 || pos <= pList->length)
+	{
+		for (int i = pList->length; i > pos; i--)
+		{
+			pList->list[i] = pList->list[i - 1];
+		}
+		pList->list[pos] = data;
+		pList->length++;
+		return pList->length;
+		//return ++plist->length;
+	}
+	return -1;
+}
+
 /**
 *@brief 将pos位置处的元素删除
 *@param pList 指向线性表的指针
@@ -167,7 +239,28 @@ void ClearList(ListType* plist)
 *@return 成功，返回新的表长（原表长-1）, 失败，返回-1
 */
 
+int DeleteFromList(ListType* pList, int pos)
+{
+	if (pos >= 0 || pos < pList->length || pList->length - 1 >= 0)
+	{
+		for (int i = pos; i < pList->length - 1; i++)
+		{
+			pList->list[i] = pList->list[i + 1];
+		}
+		return --pList->length;
+	}
+	return -1;
+}
+
 /**
 *@brief 输出线性表
 *@param pList 指向线性表的指针
 */
+
+void PrintList(ListType* pList)
+{
+	for (int i = 0; i < pList->length; i++)
+	{
+		printf("第%d项：%d\n", i, pList->list[i]);
+	}
+}
