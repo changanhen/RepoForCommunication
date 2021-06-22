@@ -39,7 +39,7 @@ int main()
 	ListType* sqList = CreateList(MAXLENGTH);
 	//以下是对线形表的测试
 	sqList->list[0] = 9;
-	sqList->length++；
+	sqList->length++;
 	
 	ClearList(sqList);         //置表为空
 	//插入10个元素并显示
@@ -61,7 +61,7 @@ int main()
 		printf("第3个元素的前驱是%d\n", data);
 	
 	DataType x;
-	int success=GetListElement(sqlist, 2, &x);
+	int success=GetListElement(sqList, 2, &x);
 	return 0;
 }
 //线性表方法实现
