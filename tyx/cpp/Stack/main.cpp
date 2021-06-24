@@ -49,15 +49,41 @@ int main()
   *@return 指向栈的指针，如创建失败，返回NULL
   */
 
+Stack* CreateStack(int length)
+{
+	Stack* stack = (Stack*)malloc(sizeof(Stack));
+	if (stack)
+	{
+		stack->stackArray = (DataType*)malloc(sizeof(DataType)* length);
+		if (stack->stackArray == NULL)
+			return NULL;
+		stack->bottom = 0;
+		stack->top = 0;
+	}
+	return stack;
+}
+
 /**
 *@brief 清空栈
 *@param stack 指向栈的指针
 */
 
+void ClearStack(Stack* stack)
+{
+	stack->bottom = 0;
+	stack->top = 0;
+}
+
 /**
 *@brief 销毁栈
 *@param stack 指向栈的指针
 */
+
+void DestroyStack(Stack* stack)
+{
+	free(stack->stackArray);
+	free(stack);
+}
 
 /**
 *@brief 弹栈
@@ -65,11 +91,23 @@ int main()
 *@return 弹出的栈顶元素，如果弹栈失败，返回0
 */
 
+DataType Pop(Stack* stack)
+{
+	if (stack->top - stack->bottom <= 0)
+		return 0;
+	return stack->stackArray[--stack->top];
+}
+
 /**
 *@brief 压栈
 *@param stack 指向栈的指针
 *@param data 要入栈的元素
 */
+
+void Push(Stack* stack, DataType data)
+{
+	stack->stackArray[stack->top++] = data;
+}
 
 /**
 *@brief 得到栈的大小
@@ -77,9 +115,19 @@ int main()
 *@return 栈大小
 */
 
+int GetLength(Stack* stack)
+{
+	return stack->top - stack->bottom;
+}
+
 /**
 *@brief 取得栈顶元素, 但是不出栈
 *@param stack 指向栈的指针
 *@return 栈顶元素，失败返回0
 */
 
+DataType GetStackPeek(Stack* stack)
+{
+	return stack->top > stack->bottom ? 
+		stack->stackArray[stack->top - 1] : 0;
+}

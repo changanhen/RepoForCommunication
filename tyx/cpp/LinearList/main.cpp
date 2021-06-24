@@ -204,6 +204,12 @@ int GetNextElement(ListType* pList, int n, DataType* data)
 		return n + 1;
 	}
 	return -1;
+	/*
+	if (n < 0 || n > pList->length - 2)
+		return -1;
+	*data = pList->list[n + 1];
+	return n + 1;
+	*/
 }
 
 /**
@@ -228,6 +234,14 @@ int InsertToList(ListType* pList, int pos, DataType data)
 		//return ++plist->length;
 	}
 	return -1;
+	/*
+	if (pos < 0 || pos > pList->length || pList->length == pList->maxLength)
+		return -1;
+	for (int i = pList->length; i > pos; i--)
+		pList->list[i] = pList->list[i - 1];
+	pList->list[pos] = data;
+	return ++pList->length;
+	*/
 }
 
 /**
@@ -239,7 +253,7 @@ int InsertToList(ListType* pList, int pos, DataType data)
 
 int DeleteFromList(ListType* pList, int pos)
 {
-	if (pos >= 0 || pos < pList->length || pList->length - 1 >= 0)
+	if (pos >= 0 && pos < pList->length && pList->length - 1 >= 0)
 	{
 		for (int i = pos; i < pList->length - 1; i++)
 		{
@@ -248,6 +262,13 @@ int DeleteFromList(ListType* pList, int pos)
 		return --pList->length;
 	}
 	return -1;
+	/*
+	if (pos < 0 || pos > pList->length - 1)
+		return -1;
+	for (int i = pos + 1; i < pList->length; i++)
+		pList->list[i - 1] = pList->list[i];
+	return --pList->length;
+	*/
 }
 
 /**
