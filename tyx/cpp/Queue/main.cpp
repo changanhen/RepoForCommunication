@@ -49,15 +49,41 @@ int main()
  *@return 指向队列的指针，失败返回NULL
 */
 
+Queue* CreateQueue(int length)
+{
+	Queue* queue = (Queue*)malloc(sizeof(Queue));
+	if (queue != NULL)
+	{
+		queue->queArray = (DataType*)malloc(sizeof(DataType) * length);
+		if (queue->queArray == NULL)
+			return NULL;
+		queue->front = 0;
+		queue->rear = 0;
+	}
+	return queue;
+}
+
 /**
 *@brief  销毁队列
 *@param queue 指向队列的指针
 */
 
+void DestroyQueue(Queue* queue)
+{
+	free(queue->queArray);
+	free(queue);
+}
+
 /**
 *@brief  清空队列
 *@param queue 指向队列的指针
 */
+
+void ClearQueue(Queue* queue)
+{
+	queue->front = 0;
+	queue->rear = 0;
+}
 
 /**
 *@brief  得到队列的长度
@@ -65,11 +91,21 @@ int main()
 *@return 队列中的元素个数
 */
 
+int GetQueueLength(Queue* queue)
+{
+	return queue->rear > queue->front ? queue->rear - queue->front : 0;
+}
+
 /**
 *@brief  入队
 *@param queue 指向队列的指针
 *@param data 要入队的元素
 */
+
+void EnQueue(Queue* queue, DataType data)
+{
+	queue->queArray[queue->rear++] = data;
+}
 
 /**
 *@brief  出队
@@ -77,3 +113,8 @@ int main()
 *@return 出队的元素值，如队空，返回0
 */
 
+DataType DlQueue(Queue* queue)
+{
+	return queue->rear > queue->front ? 
+		queue->queArray[queue->front++] : 0;
+}
