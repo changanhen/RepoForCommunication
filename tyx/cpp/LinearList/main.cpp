@@ -92,6 +92,7 @@ ListType *CreateList(int length)
 
 void DestroyList(ListType* plist)
 {
+	free(plist->list);
 	free(plist);
 }
 
@@ -102,10 +103,7 @@ void DestroyList(ListType* plist)
 
 void ClearList(ListType* plist)
 {
-	for (int i = 0; i < plist->maxLength; i++)
-	{
-		plist->list[i] = 0;
-	}
+	plist->length = 0;
 }
 
 /**
@@ -116,10 +114,7 @@ void ClearList(ListType* plist)
 
 int IsEmptyList(ListType* plist)
 {
-	if (plist->length >= 1)
-		return 0;
-	else
-		return 1;
+	return plist->length ? 0 : 1;
 }
 
 /**
@@ -143,13 +138,10 @@ int GetListLength(ListType* plist)
 
 int GetListElement(ListType* plist, int n, DataType* data)
 {
-	if (n >= 0 || n < plist->length)
-	{
-		*data = plist->list[n];
-		return 1;
-	}
-	else 
+	if (n < 0 || n > plist->length - 1)
 		return 0;
+	*data = plist->list[n];
+	return 1;
 }
 
 /**
@@ -162,11 +154,11 @@ int GetListElement(ListType* plist, int n, DataType* data)
 
 int FindElement(ListType* plist, int pos, DataType data)
 {
-	for (; pos < plist->length; pos++)
+	for (int n = pos; n < plist->length; n++)
 	{
-		if (plist->list[pos] == data)
+		if (plist->list[n] == data)
 		{
-			return pos;
+			return n;
 		}
 	}
 	return -1;
@@ -182,12 +174,18 @@ int FindElement(ListType* plist, int pos, DataType data)
 
 int GetPriorElement(ListType* pList, int n, DataType* data)
 {
-	if (n >= 1 || n < pList->length)
+	if (n >= 1 && n < pList->length)
 	{
 		*data = pList->list[n - 1];
 		return n - 1;
 	}
 	return -1;
+	/*
+	if (n < 1 || n > pList->length - 1)
+		return -1;
+	*data = pList->[n - 1];
+	return n - 1;
+	*/
 }
 
 /**
@@ -200,7 +198,7 @@ int GetPriorElement(ListType* pList, int n, DataType* data)
 
 int GetNextElement(ListType* pList, int n, DataType* data)
 {
-	if (n >= 0 || n < pList->length - 1)
+	if (n >= 0 && n < pList->length - 1)
 	{
 		*data = pList->list[n + 1];
 		return n + 1;
@@ -218,7 +216,7 @@ int GetNextElement(ListType* pList, int n, DataType* data)
 
 int InsertToList(ListType* pList, int pos, DataType data)
 {
-	if (pList->length + 1 <= pList->maxLength || pos >= 0 || pos <= pList->length)
+	if (pList->length + 1 <= pList->maxLength && pos >= 0 && pos <= pList->length)
 	{
 		for (int i = pList->length; i > pos; i--)
 		{
