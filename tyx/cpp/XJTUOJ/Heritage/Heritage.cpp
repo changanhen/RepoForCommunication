@@ -15,12 +15,12 @@ void swap(territory *x, territory *y);
 
 int main(){
     int n;
-    cin >> n;
+    scanf("%d", &n);
     territory* t = (territory*)malloc(n * sizeof(territory));
     for (int i = 0; i < n; i++)
     {
-        //scanf("%ld%ld", t[i].numerator, t[i].denominator);
-        cin >> t[i].numerator >> t[i].denominator;
+        scanf("%llf%llf", &t[i].numerator, &t[i].denominator);
+        //cin >> t[i].numerator >> t[i].denominator;
         t[i].value = t[i].numerator / t[i].denominator;
     }
     /*if (n == 2)
