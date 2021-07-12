@@ -5,7 +5,7 @@ using namespace std;
 
 void dfs(int layer, int n);
 bool check(int layer, int row);
-int arr[13] = { 0 };
+int arr[14] = { 0 };
 int ctr = 0;
 int ans = 0;
 
@@ -22,9 +22,9 @@ void dfs(int layer, int n) {
         ans++;
         if (ctr < 3)
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 1; i <= n; i++)
             {
-                i == 0 ? printf("%d", arr[i]) : printf(" %d", arr[i]);
+                i == 1 ? printf("%d", arr[i]) : printf(" %d", arr[i]);
             }
             printf("\n");
             ctr++;
@@ -35,20 +35,20 @@ void dfs(int layer, int n) {
     {
         if (check(layer, i))
         {
-            arr[layer - 1] = i;
+            arr[layer] = i;
             dfs(layer + 1, n);
         }
     }
 }
 
 bool check(int layer, int row) {
-    for (int ii = 0; ii < layer - 1; ii++)
+    for (int ii = 1; ii < layer; ii++)
     {
         if (arr[ii] == row)
             return false;
-        else if (layer + row == arr[ii] + ii + 1)
+        else if (layer + row == arr[ii] + ii)
             return false;
-        else if (layer - row == ii + 1 - arr[ii])
+        else if (layer - row == ii - arr[ii])
             return false;
     }
     return true;
