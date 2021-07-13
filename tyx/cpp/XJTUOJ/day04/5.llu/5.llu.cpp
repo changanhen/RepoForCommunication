@@ -4,7 +4,7 @@ using namespace std;
 typedef unsigned long long int LL;
 /**
  * @brief long long int PAIR
- * @param <该位数，当前和>
+ * @param <下一位上的数，当前数值>
  */
 typedef pair<LL, LL> PAIR;
 
@@ -15,10 +15,13 @@ int main() {
     scanf("%llu%llu", &n, &m);
     while (m % 10 == 0)
     {
-        m /= 10;
+        m /= 10; //把0归入非0情况
         ctr++;
     }
     queue<PAIR> q;
+    /**
+     * @brief 对个位分类讨论以剪枝
+     */
     LL tmp = m % 10;
     if (tmp == 1 || tmp == 3 || tmp == 7 || tmp == 9)
     {
@@ -52,13 +55,16 @@ int main() {
             layer++;
         }
     }
+    /**
+     * @brief bfs扫描最小正确答案
+     */
     while (!q.empty())
     {
         PAIR P = q.front();
         LL tmp = P.first * (LL)pow(10, flag) + P.second;
         if (P.first == flag_ft)
         {
-            flag++;
+            flag++; //flag表示10的flag次方，用一个if来检测bfs到第几位了
             //layer *= n;
             flag_ft = -1;
         }
@@ -66,10 +72,10 @@ int main() {
             layer_counter++;
         if (layer_counter == layer)
         {
-            layer *= n;
+            layer *= n; //layer表示该层要进行多少次0-9的push，检测到最后一次即跳出
             layer_counter = 0;
             flag++;
-            if (_out)
+            if (_out) //_out用于判断找到正确答案的情况
             {
                 printf("%llu", _min);
                 return 0;
@@ -78,7 +84,7 @@ int main() {
         if (tmp != 0 && tmp % m == 0)
         {
             tmp *= (LL)pow(10, ctr);
-            if (tmp < _min)
+            if (tmp < _min) //在同一层bfs可能有许多个不同答案，题目需要最小的
                 _min = tmp;
             _out = true;
             //printf("%lld", tmp);
@@ -88,7 +94,7 @@ int main() {
         {
             for (LL i = 0; i < n; i++)
             {
-                q.push(make_pair(i, tmp));
+                q.push(make_pair(i, tmp));  //bfs push下一层要检测的数据
             }
         }
         q.pop();

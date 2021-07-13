@@ -30,6 +30,6 @@ int main()
             d[j] = a[i];
         }
     }
-    printf("%d\n", len);
+    printf("%d\n%d", d[len], len);
     return 0;
 }
