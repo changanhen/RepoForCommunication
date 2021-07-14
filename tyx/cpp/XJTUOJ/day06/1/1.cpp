@@ -8,6 +8,9 @@ typedef struct hole {
     LL belong;
 } Hole;
 
+LL find(LL x, Hole arr[]);
+void merge(LL a, LL b, Hole arr[]);
+
 int main() {
     LL n;
     LL _x, _y, _z, _r, ctr = 0;
@@ -33,12 +36,14 @@ int main() {
             LL dr = arr[i].r + arr[j].r;
             LL r2 = dr * dr;
             if (r2 > distance2)
+                merge(i, j, arr);
+            /*if (r2 > distance2)
             {
                 if (arr[j].belong > arr[i].belong)
                     arr[j].belong = arr[i].belong;
                 else
                     arr[i].belong = arr[j].belong;
-            }
+            }*/
             /*if (r2 > distance2)
             {
                 if (arr[j].belong != -1)
@@ -66,4 +71,12 @@ int main() {
     /*if (arr[n - 1].belong == -1)
         ctr++;
     prinf("%d", ctr - 1);*/
+}
+
+LL find(LL x, Hole arr[]) {
+    return arr[x].belong == x ? x : arr[x].belong = find(arr[x].belong, arr);
+}
+
+void merge(LL a, LL b, Hole arr[]) {
+    arr[find(a, arr)].belong = find(b, arr);
 }
