@@ -10,6 +10,8 @@ typedef struct _node
     vector<int> _out;
 } Node;
 
+Node node[100005];
+
 void dfs(Node* node, int next);
 
 long long int ans = 0;
@@ -17,10 +19,16 @@ long long int ans = 0;
 int main() {
     int n, m;
     scanf("%d%d", &n, &m);
-    Node* node = (Node*)malloc((n + 5) * sizeof(Node));
+    //Node* node = (Node*)malloc((n + 5) * sizeof(Node));
     bool init[100005];
     memset(init, 1, sizeof(init));
-    memset(node, 0, sizeof(node));
+    //memset(node, 0, sizeof(node));
+    for (int i = 1; i <= n; i++)
+    {
+        node[i].mapin = 0;
+        node[i].mapout = 0;
+        node[i]._out.clear();
+    }
     for (int i = 0; i < m; i++)
     {
         int tmp1, tmp2;
@@ -35,10 +43,11 @@ int main() {
         if (init[i])
         {
             int sz = node[i]._out.size();
+            vector<int> opt = node[i]._out;
             for (int j = 0; j < sz; j++)
             {
-                int drt = node[j]._out.back();
-                node[j]._out.pop_back();
+                int drt = opt.back();
+                opt.pop_back();
                 dfs(node, drt);
             }
         }
@@ -59,10 +68,11 @@ void dfs(Node* node, int next) {
         return;
     }
     int siz = node[next]._out.size();
+    vector<int> optp = node[next]._out;
     for (int k = 0; k < siz; k++)
     {
-        int dt = node[k]._out.back();
-        node[k]._out.pop_back();
+        int dt = optp.back();
+        optp.pop_back();
         dfs(node, dt);
     }
 }
