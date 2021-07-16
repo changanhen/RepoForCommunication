@@ -84,7 +84,7 @@ int main() {
  */
 int dfs(Node* node, int next, int price, bool not_buy[], int n) {
     int ctr = 0;
-    ctr += price;
+    ctr += min(price, yuan[next]);
     not_buy[next] = 0;
     /*if (node[next].dp)
     {
