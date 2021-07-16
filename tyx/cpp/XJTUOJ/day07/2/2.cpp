@@ -16,9 +16,10 @@ typedef struct _node
 Node node[100005];
 int yuan[100005];
 
-int dfs(Node* node, int next, int price);
+int dfs(Node* node, int next, int price, bool not_buy[], int n);
 
-long long int ans = 0;
+//long long int ans = 0;
+int _min = 2147483647;
 
 int main() {
     int n, m;
@@ -56,14 +57,21 @@ int main() {
             vector<PAIR> opt = node[i]._out;
             for (int j = 0; j < sz; j++)
             {
+                bool not_buy[100005];
+                memset(not_buy, 1, sizeof(not_buy));
                 PAIR drt = opt.back();
                 opt.pop_back();
-                int pc = dfs(node, drt.first, drt.second);
-                if 
+                int pc = dfs(node, drt.first, drt.second, not_buy, n);
+                /*for (int l = 1; l <= n; l++)
+                {
+                    if (not_buy[l])
+                        pc += yuan[l];
+                }*/
+                _min = min(pc, _min);
             }
         }
     }
-    printf("%lld", ans);
+    printf("%d", _min);
 }
 
 /**
@@ -71,20 +79,29 @@ int main() {
  * @param node 图
  * @param next 下一个节点
  * @param price 下一个节点价格
+ * @param not_buy 是否已买
+ * @param n 商品数量
  */
-int dfs(Node* node, int next, int price) {
+int dfs(Node* node, int next, int price, bool not_buy[], int n) {
     int ctr = 0;
-    if (node[next].dp)
+    ctr += price;
+    not_buy[next] = 0;
+    /*if (node[next].dp)
     {
-        ans += node[next].dp;
-        ans %= 998244353;
+        //ans += node[next].dp;
+        //ans %= 998244353;
         return node[next].dp;
-    }
+    }*/
     if (node[next].mapout == 0)
     {
-        ans++;
-        ans %= 998244353;
-        return 1;
+        for (int l = 1; l <= n; l++)
+        {
+            if (not_buy[l])
+                ctr += yuan[l];
+        }
+        //ans++;
+        //ans %= 998244353;
+        return ctr;
     }
     int siz = node[next]._out.size();
     vector<PAIR> optp = node[next]._out;
@@ -92,9 +109,12 @@ int dfs(Node* node, int next, int price) {
     {
         PAIR dt = optp.back();
         optp.pop_back();
-        ctr += dfs(node, dt.first, dt.second);
-        ctr %= 998244353;
+        ctr += dfs(node, dt.first, dt.second, not_buy, n);
+        //ctr %= 998244353;
     }
-    node[next].dp = ctr;
+    //node[next].dp = ctr;
     return ctr;
 }
+/*
+问题在于溢价如何处理
+*/
