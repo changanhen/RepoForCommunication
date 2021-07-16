@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
-#define e 1e6
+#define e 1e7
 int main()
 {
     clock_t start = clock(), finish;
