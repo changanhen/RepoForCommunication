@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define e 1230
+#define e 170
 int main()
 {
     double duration;

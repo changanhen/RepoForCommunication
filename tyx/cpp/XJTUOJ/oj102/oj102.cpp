@@ -6,7 +6,7 @@ int main() {
     char str[1005];
     scanf("%s", str);
     if (str[0] >= 'a' && str[0] <= 'z')
-        str[0] = str[0] - 26;
+        str[0] = str[0] - 32;
     int S = strlen(str);
     printf("%d\n%s", S, str);
 }
