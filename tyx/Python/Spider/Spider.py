@@ -5,7 +5,10 @@ import sys
 import sqlite3
 
 def main():
-    baseurl = "http://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=S3dzUjIyZ1lnbzdra0gwMk1BaWwwUkpQUHp1VlY3MHRiWDNpRW9FeU9qb2tSUDhKbStqUVlxZllYR2YxU1doRmFTdlpnVWhWUWxRamtieUxvZE1rZEE9PQ&EMAP_LANG=zh&THEME=millennium#/xskcb"    # 网址
+    # 目标网址
+    # baseurl = "http://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=S3dzUjIyZ1lnbzdra0gwMk1BaWwwUkpQUHp1VlY3MHRiWDNpRW9FeU9qb2tSUDhKbStqUVlxZllYR2YxU1doRmFTdlpnVWhWUWxRamtieUxvZE1rZEE9PQ&EMAP_LANG=zh&THEME=millennium#/xskcb"
+    # 测试网址
+    baseurl = "http://httpbin.org/get"
     # 测试
     response = askUrl(baseurl)
     try:
@@ -16,12 +19,15 @@ def main():
     saveData = ".\\课表.xlsx"   #保存路径
 
 
-
 # 请求网址
 def askUrl(baseurl):
-    response = ""   # 初始化字符串
+    # 初始化response应为html对象
+    # response = urllib.request.urlopen("")   # 初始化response
+    response = ""
     try:    # 捕获异常码
-        response = urllib.request.urlopen(baseurl, timeout=1)
+        response = urllib.request.urlopen(baseurl, timeout=10)
+        # 状态码捕获暂未完成
+        # print(response.status)
     except Exception as result:
         print("打开失败")
         print(result)
