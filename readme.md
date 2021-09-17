@@ -13,6 +13,6 @@ This is a repo for code communication.
 Our peers:  
 From XJTU  
 * Yuxiao Tang(1507844577@qq.com)
-* Yundian Zhu(599125397@qq.com)
+* Yundian Zhu(599125397@qq.com)  
 From NUST  
 * Binghan Wu(not available now)
