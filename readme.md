@@ -11,8 +11,8 @@ Content
 -----------------
 This is a repo for code communication.  
 Our peers:  
-**From XJTU**  
+From XJTU  
 * Yuxiao Tang(1507844577@qq.com)
 * Yundian Zhu(599125397@qq.com)
-__From NUST__  
+From NUST  
 * Binghan Wu(not available now)
