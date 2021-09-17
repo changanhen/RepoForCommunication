@@ -12,7 +12,7 @@ Content
 This is a repo for code communication.  
 Our peers:  
 **From XJTU**  
-Yuxiao Tang(1507844577@qq.com)  
-Yundian Zhu(599125397@qq.com)  
+* Yuxiao Tang(1507844577@qq.com)
+* Yundian Zhu(599125397@qq.com)
 __From NUST__  
-Binghan Wu(not available now)  
+* Binghan Wu(not available now)
