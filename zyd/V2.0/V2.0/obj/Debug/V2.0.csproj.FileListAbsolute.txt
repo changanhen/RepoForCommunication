@@ -1,0 +1,7 @@
+D:\C#\程序\V2.0\V2.0\bin\Debug\V2.0.exe.config
+D:\C#\程序\V2.0\V2.0\bin\Debug\V2.0.exe
+D:\C#\程序\V2.0\V2.0\bin\Debug\V2.0.pdb
+D:\C#\程序\V2.0\V2.0\obj\Debug\V2.0.csproj.AssemblyReference.cache
+D:\C#\程序\V2.0\V2.0\obj\Debug\V2.0.csproj.CoreCompileInputs.cache
+D:\C#\程序\V2.0\V2.0\obj\Debug\V2.0.exe
+D:\C#\程序\V2.0\V2.0\obj\Debug\V2.0.pdb
