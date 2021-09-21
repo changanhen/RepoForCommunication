@@ -43,7 +43,7 @@
 * ## 事件7：寻找合适的项目
 时间：Current--Sep.30th
 负责人：
-### 参考网址：http://pec.xjtu.edu.cn/info/1126/2771
+### 参考网址：http://pec.xjtu.edu.cn/info/1126/2771.htm
 
 
 ## 事件8：注意计算机程序设计课程上的项目
